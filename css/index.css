@@ -1,0 +1,1068 @@
+﻿/*
+Theme Name: Techsoft Inc.
+Author: Chase Gatyas
+Description: Custom Bootstrap 4 theme for the Techsoft website.
+Version: 0.0.1
+Tags: 
+
+
+
+ * Table of Contents
+ *
+ * 1.0 - Reset
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigations
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Header
+ * 11.0 - Widgets
+ * 12.0 - Content
+ *    12.1 - Posts and pages
+ *    12.2 - Post Formats
+ *    12.3 - Comments
+ * 13.0 - Footer
+ * 14.0 - Media
+ *    14.1 - Captions
+ *    14.2 - Galleries
+ * 15.0 - Multisite
+ * 16.0 - Media Queries
+ *    16.1 - Mobile Large
+ *    16.2 - Tablet Small
+ *    16.3 - Tablet Large
+ *    16.4 - Desktop Small
+ *    16.5 - Desktop Medium
+ *    16.6 - Desktop Large
+ *    16.7 - Desktop X-Large
+ * 17.0 - Print
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: .85rem;
+}
+
+h4 {
+    font-size: .6rem;
+}
+
+h5 {
+    font-size: .45rem;
+}
+
+a {
+    color: #124565;
+}
+
+a:hover {
+    color: #3981ad;
+}
+
+.float-left,
+.alignLeft {
+    float: left;
+}
+
+img.alignleft {
+    margin-right: 30px;
+}
+
+ul li ul {
+    margin-left: 40px;
+}
+
+.widget_recent_entries ul {
+    list-style-type: none;
+    -webkit-padding-start: 10px;
+}
+
+.widget_recent_entries ul li {
+    padding: 5px 0;
+}
+
+p {
+    font-family: 'Play', sans-serif;
+}
+
+.navbar .nav-link {
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    /* font-color: #0C4466; */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: bold;
+    color: #0C4466;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* changing... */
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #acacac;
+}
+
+.navbar-brand img {
+    width: 300px;
+}
+
+.navbar-fixed {
+    position: relative;
+}
+
+.navbar-nav li.active>a {
+    /* background-color: #333; */
+    color: #124565;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-nav li {
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    flex-basis: auto;
+}
+
+#animation_container {
+    width: 100%;
+    /* height: 400px; */
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#footerMenu ul li {
+    color: white;
+    padding: 0 15px;
+    font-family: 'Play', sans-serif;
+}
+
+#footer a {
+    color: white;
+}
+
+#footer #copyright {
+    margin-top: .5rem;
+    justify-content: center;
+    font-size: small;
+}
+
+a.dropdown-item:hover+.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 245px;
+}
+
+.dropdown-item.active {
+    background-color: #f8f9fa;
+    color: #16181b;
+}
+
+.dropdown-menu>.dropdown-menu:hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 245px;
+}
+
+.socialIcon {
+    color: #acacac;
+    padding: 0px 4px 0px 4px;
+}
+
+.socialIcon:hover {
+    color: #124565;
+}
+
+.jumbotron {
+    height: 360px;
+}
+
+#jumbotron-container {
+    position: relative;
+}
+
+.jumbotronHeader {
+    margin-top: 0;
+    margin-left: 28%;
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding-top: 7%;
+    font-size: 45px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.7);
+    letter-spacing: 4px;
+}
+
+.carouselHeader {
+    font-size: 45px;
+}
+
+hr {
+    border-color: #acacac;
+    margin-top: 20px;
+    margin-bottom: 34px;
+}
+
+.display-3 h1 {
+    color: white;
+}
+
+.carousel-item {
+    height: 320px;
+}
+
+.carousel-image-5 {
+    /* margin-top: 77px !important; */
+    background: url("../img/Jumbotron_CMMI_LG.png");
+    background-size: cover;
+}
+
+.carousel-image-4 {
+    /* margin-top: 77px !important; */
+    background: url("../img/Jumbotron_TSCloud_LG.png");
+    background-size: cover;
+}
+
+.carousel-image-2 {
+    /* margin-top: 77px !important; */
+    background: url("../img/Jumbotron flash player discontinued_LG.png");
+    background-size: cover;
+}
+
+.carousel-image-3 {
+    /* margin-top: 77px !important; */
+    background: url("../img/Jumbotron_BMT_LG.png");
+    background-size: cover;
+}
+
+.carousel-image-1 {
+    /* margin-top: 77px !important; */
+    background: url("../img/Jumbotron TS_logo_LG.png");
+    background-size: cover;
+}
+
+.aboutBackgroundImage {
+    background: url("../img/Jumbotron_AboutUS_LG.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.newsEventsBackgroundImage {
+    background: url("../img/Jumbotron_newsAndEvents.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.aboutUsBackgroundImage {
+    background: url("../img/Jumbotron_aboutUs.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.article-img {
+    /* width: 180px; */
+    margin-right: 2em;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.4);
+}
+
+.section-gutter {
+    margin: 0 60px;
+    width: 75%;
+}
+
+#aboutUsLeft {
+    /* margin: 48px; */
+    border: 0em;
+}
+
+#aboutUsLeft img {
+    /* height: 22%;
+    width: 22%; */
+    border-radius: 0.500rem;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.4);
+}
+
+#aboutUsLeft h1 {
+    margin-top: 0em;
+    margin-left: 29px;
+    margin-bottom: .5em;
+}
+
+#aboutUsLeft p {
+    margin-left: 29px;
+}
+
+#aboutUs {
+    border: 0em;
+}
+
+#aboutUs img {
+    height: 22%;
+    width: 22%;
+    border-radius: 0.975rem;
+    margin-left: 29px;
+}
+
+#aboutUs h1 {
+    margin-left: 29px;
+}
+
+#aboutUs p {
+    margin-left: 29px;
+}
+
+#careers {
+    border: 0em;
+}
+
+#careers img {
+    /* width: 450px; */
+    height: 300px;
+    border-radius: 0.500rem;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.4);
+}
+
+#careers p {
+    margin-left: 29px;
+}
+
+#careers h1 {
+    margin-top: 0em;
+    margin-left: 29px;
+    margin-bottom: .5em;
+}
+
+.contactUSBackgroundImage {
+    background: url("../img/Jumbotron_contactUs.png");
+    background-size: cover;
+    height: 400px;
+}
+
+#subjectDropDown {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0.75rem;
+}
+
+#subjectLabel {
+    margin: 0%;
+}
+
+#subjectDropDown .btn {
+    transition: none;
+}
+
+.empPortalBackgroundImage {
+    background: url("../img/Jumbotron_empPortal.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.card-img-bottom {
+    color: #fff;
+    height: 20rem;
+    background: url(../img/mobile.png) center no-repeat;
+    background-size: cover;
+}
+
+.itSvcsBackgroundImage {
+    background: url("../img/Jumbotron_iTSvcs.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.secSvcsBackgroundImage {
+    background: url("../img/Jumbotron_securitySvcs.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.pcsEngBackgroundImage {
+    background: url("../img/Jumbotron_processEng.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.sftwrSupBackgroundImage {
+    background: url("../img/Jumbotron_softwareSup.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.isdSvcsBackgroundImage {
+    background: url("../img/Jumbotron_ISDSvcs.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.careersBackgroundImage {
+    background: url("../img/Jumbotron_careers.png");
+    background-size: cover;
+    height: 400px;
+}
+
+.careerDescription {
+    font-size: 18px;
+}
+
+.careerCard {
+    border: 0em;
+}
+
+#jobs-widget {
+    height: auto !important;
+}
+
+#emailForm .card {
+    border: 0em;
+    /* margin: 20px; */
+}
+
+.wpcf7-validation-errors,
+.wpcf7-acceptance-missing {
+    border: none;
+}
+
+#map {
+    border-radius: 0.5rem;
+}
+
+#InfinityHR_Applicant_Portal {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0em;
+    background-color: #fff;
+}
+
+#ctl00_imgCompany {
+    background: url(http://notrealdomain2.com/newbanner.png) no-repeat;
+}
+
+.googleMap {
+    width: 400px;
+    height: 400px;
+}
+
+#employeeCard .card {
+    width: 18em;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+}
+
+#employeeCard h3 {
+    background-color: #87ADC9;
+    color: #fff;
+}
+
+.employeeCardContent {
+    padding-left: 20px;
+}
+
+.employeeCardContent a {
+    color: #87ADC9;
+}
+
+.fa {
+    font-size: 24px;
+}
+
+.headerColor {
+    color: #0C4466;
+    font-weight: bold;
+}
+
+.dark-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hideBorder {
+    border: none;
+}
+
+.bodyTextColor {
+    color: #87ADC9 !important;
+    transition: all 0.3s ease;
+}
+
+.card-color-header {
+    color: #87ADC9;
+    transition: all 0.3s ease;
+}
+
+.card-text p {
+    margin-bottom: 0rem;
+}
+
+.card-body {
+    padding: 0 20px;
+}
+
+.cardGroupTitleMargin {
+    margin-left: 35px;
+}
+
+.cardBorder {
+    border-color: #acacac;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+.card-body p {
+    color: #87ADC9 !important;
+}
+
+.card {
+    flex-direction: row;
+    /* overflow: hidden; */
+}
+
+.cls-1,
+.cls-3 {
+    fill: #115c95 !important;
+    transition: all 0.3s ease;
+}
+
+svg {
+    padding: 20px;
+    width: 78%;
+}
+
+.cardBorder:hover .cls-1,
+.cardBorder:hover .cls-2,
+.cardBorder:hover .cls-3,
+.cardBorder:hover .card-color-header,
+.cardBorder:hover p {
+    opacity: 1;
+    fill: #0C4466 !important;
+    color: #0C4466 !important;
+}
+
+.cardBorder {
+    text-align: center;
+    border-color: #acacac;
+    border-width: 0px;
+    box-shadow: 5px 5px 25px 0px rgba(0, 0, 0, 0.308);
+    border-radius: 0.6rem;
+    transition: all 0.3s ease;
+}
+
+.cardBorder .card-body {
+    padding-bottom: 14px;
+}
+
+.cardBorder a {
+    text-decoration: none;
+}
+
+#cardSection .card {
+    margin: 20px;
+}
+
+.card-img {
+    margin: 0 auto;
+    background-size: contain;
+    height: 2px;
+    width: 200px;
+    display: block;
+    margin-top: 10px;
+}
+
+.cardBorder:hover .card-img {
+    background-size: contain;
+    display: block;
+    margin-top: 20px;
+}
+
+.cardBorder:hover {
+    box-shadow: 2px 2px 25px 0px rgba(46, 61, 73, 0.2);
+}
+
+#searchBar .fa {
+    font-size: 20px;
+}
+
+#searchButton .fa {
+    color: black;
+}
+
+#footer {
+    background-color: #0C4466;
+    min-height: 300px;
+}
+
+#footer a:hover {
+    color: black;
+}
+
+.footerLinks {
+    color: white;
+}
+
+#copyright {
+    color: white;
+    float: right;
+}
+
+#logoRow img {
+    margin: 0 10px;
+}
+
+.divider {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #acacac;
+    border-color: #acacac;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.breadcrumb {
+    background-color: white;
+}
+
+.fontFamily {
+    font-family: 'Play', sans-serif;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.mapCardText p {
+    color: #000 !important;
+}
+
+
+/*16.0 Media Queries */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media screen and (max-width: 576px) {
+    .navbar-brand img {
+        width: 200px;
+    }
+    .navbar {
+        margin-bottom: 20px;
+    }
+    #myCarousel {
+        display: none;
+    }
+    .cardBorder {
+        margin: 40px 0;
+    }
+    #logoRow {
+        /* flex-direction: column;
+        text-align: center;
+        margin: auto !important;
+        flex: 0 0 50%;
+        width: 100%; */
+        display: none;
+    }
+    #logoRow img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    #logoRow {
+        flex-direction: column;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    #menu-footer li {
+        text-align: center;
+    }
+    #socialNav {
+        display: none;
+    }
+    .jumbotron {
+        height: auto;
+        padding: 0;
+        margin: 0;
+        background: none !important;
+        display: none;
+    }
+    .jumbotronHeader {
+        padding-top: 15px;
+        padding-left: 25px;
+        color: #0C4466;
+        text-shadow: none;
+    }
+    #animation_container {
+        display: none;
+    }
+    #aboutUsLeft {
+        display: block;
+    }
+    #aboutUsLeft img {
+        width: 100%;
+        border-radius: 0.975rem;
+        /* margin-left: 29px; */
+    }
+    #aboutUsLeft p {
+        margin-left: 0% !important;
+    }
+    #aboutUsLeft .card-block .card-text h1 {
+        margin-left: 0%;
+    }
+    #careers {
+        display: block;
+    }
+    #careers h1 {
+        margin-left: 0px;
+    }
+    #careers p {
+        margin-left: 0%;
+    }
+    #careers img {
+        /* width: 20%;
+        height: 20%; */
+        /* margin: 20px; */
+        width: 100%;
+        border-radius: 0.500rem;
+        box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.4);
+    }
+    .mapCardText h1 {
+        margin-bottom: 0%;
+    }
+    .mapCardText p {
+        margin-top: 0% !important;
+    }
+    .googleMap {
+        width: 310px;
+        height: 310px;
+    }
+    #emailForm {
+        margin-left: 0% !important;
+        padding: 0%;
+    }
+    #emailForm .card {
+        overflow: none !important;
+    }
+    /* bleep bloop */
+    /* my comment for a git commit test, remove later please and thanks again */
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+@media screen and (max-width: 768px) {
+    #myCarousel {
+        display: none;
+    }
+    .cardBorder {
+        margin: 40px 0;
+    }
+    .card-deck {
+        display: block;
+        width: 50% !important;
+    }
+    #socialNav {
+        display: none;
+    }
+    #logoRow {
+        /* flex-direction: column;
+        text-align: center;
+        margin: auto !important;
+        flex: 0 0 50%;
+        width: 100%; */
+        display: none;
+    }
+    #logoRow img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    #logoRow {
+        flex-direction: column;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .jumbotronHeader {
+        padding-top: 50px;
+        padding-left: 0;
+    }
+    #aboutUs img {
+        /* height: 22%; */
+        width: 40%;
+        border-radius: 0.975rem;
+    }
+    #animation_container {
+        display: none;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media screen and (max-width: 992px) {
+    #animation_container {
+        display: none;
+    }
+    .jumbotron {
+        height: 200px;
+    }
+    /* #aboutUsLeft img {
+        width: 33%;
+        height: 33%;
+    } */
+    .jumbotronHeader {
+        padding-top: 80px;
+        padding-left: 0;
+    }
+    section.section-gutter {
+        margin: 0 10px;
+        width: 100%;
+    }
+    .w-75 {
+        width: 90% !important;
+    }
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    #logoRow img {
+        margin: 0 20px;
+    }
+    .carousel-item {
+        height: 320px;
+    }
+    .carouselHeader {
+        font-size: 45px;
+    }
+    .jumbotron {
+        height: 220px;
+    }
+    .navbar-nav li {
+        justify-content: space-between;
+    }
+    .navbar-collapse {
+        justify-content: center;
+        flex-basis: 70%;
+    }
+    #animation_container {
+        width: 1920px;
+        height: 200px !important;
+        display: none !important;
+    }
+    canvas {
+        display: none !important;
+    }
+    .card-img {
+        width: 140px;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+    #careers {
+        display: block;
+    }
+    #careers h1 {
+        margin-left: 0px;
+    }
+    #careers p {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .jumbotron {
+        height: 280px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: smaller;
+    }
+    .w-75 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .jumbotron {
+        height: 320px;
+    }
+    .card-img {
+        width: 180px;
+    }
+}
+
+
+/* ****** */
+
+
+/* Bootstrap Default Breakpoints */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {}
+
+
+/* Small devices (landscape phones, less than 768px) */
+
+
+/* @media (max-width: 767.98px) {
+    #careers .card {
+        flex-direction: unset;
+    }
+} */
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {}
+
+
+/* Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
+
+
+/* Extra large devices (large desktops) */
+
+
+/* No media query since the extra-large breakpoint has no upper bound on its width */
+
+
+/* ******  */
+
+
+/* Custom Media Queries for Navigation Menu */
+
+
+/* ****** */
+
+@media screen and (max-width: 1344px) {
+    #socialNav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1216px) {
+    .navbar-expand-md .navbar-toggler {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1216px) {}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-toggler {
+        display: block;
+    }
+}
+
+@media (min-width: 2378px) {
+    /* .carousel-inner {
+        height: 100%;
+    } */
+    /* #showcase {
+        height: 350px;
+    }
+    #myCarousel {
+        height: 350px;
+    } */
+    .carousel-item {
+        height: 400px;
+    }
+}

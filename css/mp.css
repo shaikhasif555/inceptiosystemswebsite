@@ -1,0 +1,110 @@
+﻿@charset "utf-8";
+
+.menucon{position:absolute;z-index:5;width:100%;background-color:rgba(0, 0, 0, 0.87);max-height:525px; overflow:auto}
+#mabouta, #mprodsa, #mboa,#mfoa, #mmata, #mpossa, #mhra, #mspeca{display:none}
+.menucon > ul > li > ul > li{background-color:rgba(255, 255, 255, 0.13)}
+.menbtn{padding-left:5px;}
+.profile{margin-bottom:0;}
+.menbtn img{vertical-align:middle}
+.menucon > ul > li > ul > li > ul > li {background-color:rgba(0, 0, 0, 0.68)}
+.menbtn{line-height:30px;}
+.cntr > .compare > ul:nth-child(2){background-color:#0CF}
+.cntr > .compare > ul:nth-child(2) li{ word-wrap:break-word}
+
+.mobno{display:block}
+.mobilemenu{display:none}
+#mobmena{display:none}
+#mobmena a{color:#B9B9B9}
+.mobilemenu{width:100%;float:left;border-bottom:1px solid #E8E8E8}
+.mobilemenu ul{list-style:none;float:left;width:100%;margin:0;padding:0;color:#B9B9B9}
+.mobilemenu ul li{border-bottom:1px solid #444;list-style:none;float:left;width:96%;padding:5px 1% 5px 2%;line-height:25px;}
+.mobilemenu > ul > li{background-color:rgba(209, 225, 227, 0.89)}
+.mobilemenu > ul > li > ul > li{background-color:rgba(64, 192, 203, 0.69)}
+.mprodmenu2 > li > span{padding:7px 1% 7px 1%;display:block;-webkit-transition:.5s;transition:.5s;color:#E4E4E4;background-color:#838383;border-bottom:2px solid #5DCFF0;float:left;width:98%}
+.sprtnum{height:65px;line-height:31px;}
+.sprtnums{height:60px;line-height:20px;}
+.prodmenu2hi{display:block}
+.mprodmenu2{display:none}
+@media only screen and (max-width:1024px){
+.compare ul li:first-child{text-align:left}
+.supcnt{width:100%}
+.sprtimgbx{width:100%}
+.sprtimgbx img{width:100%}
+.supcntbx{width:100%}
+.slidertxt{position:relative;float:left;margin-top:30px;margin-bottom:-102px;}
+.prodmenu2hi{display:none}
+.mprodmenu2{display:block}
+.slidertxt{padding: 20px 0px 20px 38px;font-size: 1.8em;left: 2%;top: 30%;width: 75%;}
+.demobuton{display:none}
+.demobuton1{display:none}
+.fcntr{width:100%;}
+.foobx1 {width:46%}
+.foobx2 {width:46%}
+.foobx3{width:100%}
+.prdctbxa{width:100%}
+.fsocial{width:138px;margin:0 auto;float:none}
+.prdctbxes{width:98%}
+.fwinsarlogo{text-align:center}
+.copyrht{ text-align:center}
+.highbx{width:96%;margin-top:5%}
+.tstmnals {margin-top:7%}
+.testln{width:100%;margin-left:0}
+.testln2{width:100%;margin-right:0}
+.nxtbtn, .prvbtn{display:none}	
+.mobno{display:none !important}
+.langbx{height:auto;}
+.cntr, .langbxinr{width:98%}
+.lftbx{width:100%;}
+.rhtbx{width:100%;}
+.imgbxsm{padding:0;width:100%}
+.imgbxsm img{width:100%}
+.logoinnr{width:98%;}
+.inceptiologo{margin:32px auto 10px auto;float:none !important;}
+.rightmenbx{display:none !important}
+.mobilemenu{display:block}
+}
+@media only screen and (max-width:768px){
+	
+.profile{margin-top:0;padding-bottom:15px;padding-top:15px;line-height:33px;}
+.exptxtbx{width:96%;margin-left:2%;}
+.txtbox2{width:96%}
+.morebx2{display:none}
+.txtbox{width:96%;margin-left:2%;height:auto}
+.modinr1a, .modinr2a, .modinr3a{width:100%}
+.expimgbx{width:100%}
+.modtxt2 a{font-size:.8em}
+.slidertxt{font-size:1.5em;top:23%;padding: 10px 0px 10px 38px;}
+.lansel ul li{width:62px;}
+.langbxinr{ font-size:12px;}
+.lansel{width:74px;}
+
+.arrbx{margin-left:0;}
+.lansel ul ul{width:63px;}
+.lansel ul ul li{width:63px;}
+.phoneic{margin:4px 0 0 0 }
+.mailic{margin:4px 3px 0 3px}
+.foobx1 {width:100%}
+.foobx2 {width:100%}
+}
+@media only screen and (max-width:500px){
+	
+	
+	.cntinrimg2{width:13%}
+	.cnttext2{width:60%}
+	.cntbxes2{width:96%}
+.sprtfulbx{width:250px; line-height:30px;}
+.slidertxt{font-size:1em;top:25%}
+.social{display:none}
+
+.list_carousel{margin:15px 030px 60px;width:92%;float:left;}
+.list_carousel ul{margin:0;padding:0;list-style:none;display:block;}
+.list_carousel li{text-align:center;width:160px;height:70px;padding:0;margin:6px;display:block;float:left;}
+.list_carousel.responsive{width:auto;margin-left:0;}
+}
+@media only screen and (max-width:320px){
+.slidertxt{font-size:.8em;top:26%}
+.list_carousel{margin:15px 0 0px 60px;width:81%;float:left;}
+.list_carousel ul{margin:0;padding:0;list-style:none;display:block;}
+.list_carousel li{text-align:center;width:160px;height:70px;padding:0;margin:6px;display:block;float:left;}
+.list_carousel.responsive{width:auto;margin-left:0;}
+}
